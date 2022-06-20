@@ -1,0 +1,25 @@
+schema {query: Query, mutation:Mutation}
+type laptop{
+	LaptopID: ID!
+	brand_name: String
+	model: String
+	ram: Int
+	processor: String
+}
+
+type Query{
+	findAllLaptop: [laptop]
+}
+input laptopInput{
+	LaptopID: ID!
+	brand_name: String
+	model: String
+	ram: Int
+	processor: String
+
+}
+type Mutation{
+	addLaptop(laptop: laptopInput): laptop
+
+	deleteLaptop(laptopId: ID!): String
+}
