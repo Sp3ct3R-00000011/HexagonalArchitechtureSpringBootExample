@@ -12,10 +12,6 @@ import java.util.List;
 public class Query implements GraphQLMutationResolver, GraphQLQueryResolver {
 	@Autowired
 	private laptopRepo lRepo;
-	public String test(){
-
-		return "This is wrking!!";
-	}
 	public laptop addLaptop(laptop l) {
 		lRepo.save(l);
 		return l;

@@ -8,7 +8,7 @@ type laptop{
 }
 
 type Query{
-	findAllLaptop: [laptop]
+	findAllLaptops: [laptop]
 }
 input laptopInput{
 	LaptopID: ID!
