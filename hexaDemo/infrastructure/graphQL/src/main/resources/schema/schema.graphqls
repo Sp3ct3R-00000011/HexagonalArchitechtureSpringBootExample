@@ -20,6 +20,6 @@ input laptopInput{
 }
 type Mutation{
 	addLaptop(laptop: laptopInput): laptop
-
+	getlaptop(laptopId: ID!): laptop
 	deleteLaptop(laptopId: ID!): String
 }
